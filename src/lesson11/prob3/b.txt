@@ -1,0 +1,6 @@
+List<Object> objs = new ArrayList<>();
+objs.add(1);
+objs.add("two");
+List<? super Integer> ints = objs;
+
+Answer: no compiler error

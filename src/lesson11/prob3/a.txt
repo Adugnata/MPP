@@ -1,0 +1,8 @@
+List<Integer> ints = new ArrayList<>();
+ints.add(1);
+ints.add(2);
+List<? extends Number> nums = ints;
+double dbl = sum(nums);
+nums.add(3.14); //compiler error
+
+Answer: compiler error at line number 6

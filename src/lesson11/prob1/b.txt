@@ -1,0 +1,9 @@
+List<Integer> ints = new ArrayList<>();
+ints.add(1);
+ints.add(2);
+List<? extends Number> nums = ints;
+nums.add(3.14);// not possible to add element
+
+Answer:
+  Compiler error occurs at line number 5 since it is not possible
+  to add element when wildcard extends parameterized type
