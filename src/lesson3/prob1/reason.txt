@@ -1,0 +1,12 @@
+
+        Person p1 = new PersonWithJob("Joe", 30000);
+		Person p2 = new Person("Joe");
+
+		System.out.println("p1.equals(p2)? " + p1.equals(p2));
+		It is false because person is not an instance of PersonWithJob
+		due to the fact that Person is a parent class.
+
+		System.out.println("p2.equals(p1)? " + p2.equals(p1));
+		It is true because PersonWithJob is an Instance of Person
+		indeed PersonWithJob inherits from person.
+

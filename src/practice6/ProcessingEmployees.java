@@ -1,9 +1,6 @@
 package practice6;
 
-import lesson9.exer.exercise_5.ExamData;
-
 import java.util.*;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -57,17 +54,19 @@ public class ProcessingEmployees {
         System.out.println(countByDepartment);
 
         System.out.println("\nPrint out each department and the average salary for the department.\n");
-        Map<String, Double>
-                avgSalaryByDepartment = list
+		Map<String, Double>
+				avgSalaryByDepartment = list
 				.stream()
-				.collect(Collectors.groupingBy(Employee::getDepartment,Collectors.averagingDouble(Employee::getSalary)));
-        System.out.println(avgSalaryByDepartment);
+				.collect(Collectors.groupingBy(Employee::getDepartment, Collectors.averagingDouble(Employee::getSalary)));
+		System.out.println(avgSalaryByDepartment);
 
-        System.out.println("\n8) Print out each department and all of the employees who work at that department.\n");
-        Map<String, List<Employee>> empByDepartment = list
+		System.out.println("\n8) Print out each department and all of the employees who work at that department.\n");
+		Map<String, List<Employee>> empByDepartment = list
 				.stream().collect(Collectors.groupingBy(Employee::getDepartment));
-        System.out.println(empByDepartment);
-
+		System.out.println(empByDepartment);
+		System.out.println();
+		DoubleSummaryStatistics summary = list.stream().collect(Collectors.summarizingDouble(Employee::getSalary));
+		System.out.println(summary.toString());
 	}}
 
 

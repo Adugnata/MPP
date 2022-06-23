@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>lesson3.prob2</OriginalElement>
+  <nodes>
+    <node x="2.240000000000009" y="129.0">lesson3.prob2.Building</node>
+    <node x="128.00000000000003" y="433.0">lesson3.prob2.Main</node>
+    <node x="76.50000000000001" y="0.0">lesson3.prob2.Apartment</node>
+    <node x="0.0" y="304.0">lesson3.prob2.LandlordInfo</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="lesson3.prob2.Main" target="lesson3.prob2.LandlordInfo" relationship="CREATE">
+      <point x="0.0" y="-27.0" />
+      <point x="202.50000000000003" y="407.0" />
+      <point x="96.0" y="407.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="lesson3.prob2.Main" target="lesson3.prob2.Apartment" relationship="CREATE">
+      <point x="0.0" y="-27.0" />
+      <point x="202.50000000000003" y="407.0" />
+      <point x="243.75" y="407.0" />
+      <point x="243.75" y="103.0" />
+      <point x="191.50000000000006" y="103.0" />
+      <point x="46.00000000000003" y="38.5" />
+    </edge>
+    <edge source="lesson3.prob2.Building" target="lesson3.prob2.Apartment" relationship="DEPENDENCY">
+      <point x="54.0" y="-60.5" />
+      <point x="164.24" y="103.0" />
+      <point x="145.5" y="103.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="lesson3.prob2.LandlordInfo" target="lesson3.prob2.Building" relationship="TO_MANY">
+      <point x="-48.0" y="-38.5" />
+      <point x="48.0" y="277.0" />
+      <point x="38.24000000000001" y="277.0" />
+      <point x="-72.0" y="60.5" />
+    </edge>
+    <edge source="lesson3.prob2.Main" target="lesson3.prob2.Building" relationship="CREATE">
+      <point x="0.0" y="-27.0" />
+      <point x="202.50000000000003" y="407.0" />
+      <point x="217.75" y="407.0" />
+      <point x="217.75" y="277.0" />
+      <point x="182.24" y="277.0" />
+      <point x="72.0" y="60.5" />
+    </edge>
+    <edge source="lesson3.prob2.Building" target="lesson3.prob2.Apartment" relationship="TO_MANY">
+      <point x="-54.0" y="-60.5" />
+      <point x="56.24000000000001" y="103.0" />
+      <point x="99.50000000000001" y="103.0" />
+      <point x="-46.0" y="38.5" />
+    </edge>
+    <edge source="lesson3.prob2.LandlordInfo" target="lesson3.prob2.Building" relationship="DEPENDENCY">
+      <point x="48.0" y="-38.5" />
+      <point x="144.0" y="277.0" />
+      <point x="110.24000000000001" y="277.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="138.5" y="243.5" />
+  <SelectedNodes>
+    <node>lesson3.prob2.Apartment</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

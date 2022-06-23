@@ -1,0 +1,20 @@
+JFDML JFormDesigner: "7.0.5.4.420" Java: "11.0.13" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:17:p, comp menu1:::p::p, space ::326:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp menu1:::p::p, space ::241:x}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+				name: "menu1"
+				"text": "login"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

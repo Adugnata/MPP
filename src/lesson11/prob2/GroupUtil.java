@@ -9,7 +9,7 @@ public class GroupUtil {
 	}
 	static <T> T helper(Group<T> group){
 		List<T> elements = group.getElements();
-		Group<?> grp = new Group<T>(group.getSpecialElement(), elements);
+        Group<T> grp = new Group(group.getSpecialElement(), elements);
 		return (T) grp;
 	}
 	

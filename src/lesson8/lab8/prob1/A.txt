@@ -1,0 +1,2 @@
+i. s and t are free variables
+ii. s and t are parameters, and ignoreCase is free variable
